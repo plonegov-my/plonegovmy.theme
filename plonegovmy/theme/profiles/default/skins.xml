@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<object name="portal_skins" allow_any="False" cookie_persistence="False"
+   default_skin="Sunburst Theme">
+   <object name="plonegovmy_theme"
+        meta_type="Filesystem Directory View"
+        directory="plonegovmy.theme:skins/plonegovmy_theme"/>
+    <skin-path name="*">
+        <layer name="plonegovmy_theme"
+                insert-after="custom"/>
+    </skin-path>
+</object>

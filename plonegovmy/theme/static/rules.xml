@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--start main rule, only theme if #visual-portal-wrapper exist -->
+<rules
+    xmlns="http://namespaces.plone.org/diazo"
+    xmlns:css="http://namespaces.plone.org/diazo/css"
+    xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+    css:if-content="#visual-portal-wrapper">
+
+    <rules css:if-content="#visual-portal-wrapper">
+        <theme href="index.html"/>
+        <!--HEAD SECTION-->
+        <!-- Drop styles in the head - these are added back by including them from Plone -->
+        <drop theme="/html/head/style | /html/head/script | /html/head/link | /html/head/title" />
+        <prepend theme="/html/head" content="/html/head/base | /html/head/link | /html/head/style | /html/head/script | /html/head/meta | /html/head/title" />
+        <replace theme="/html" content="/html" attributes="lang"/>
+        <merge theme="/html/body" content="/html/body" attributes="class"/>
+        <merge theme="/html/body" content="/html/body" attributes="dir"/>
+        <append css:theme="body" css:content="#plone-analytics"/>
+
+        <replace css:theme-children="#portal-personaltools-wrapper"
+            css:content-children="#portal-personaltools-wrapper"/>
+        <replace css:theme-children="#portal-searchbox"
+            css:content-children="#portal-searchbox"/>
+
+        <replace css:theme="#portal-logo"
+            css:content="#portal-logo"/>
+
+        <replace css:theme-children="#portal-globalnav"
+            css:content-children="#portal-globalnav"/>
+
+        <replace css:theme-children="#portal-columns"
+            css:content-children="#portal-columns"/>
+
+        <replace css:theme-children="#portal-colophon"
+            css:content-children="#portal-colophon"/>
+
+        <replace css:theme-children="#portal-siteactions"
+            css:content-children="#portal-siteactionst"/>
+
+    </rules>
+</rules>
