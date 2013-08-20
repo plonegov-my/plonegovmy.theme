@@ -1,0 +1,46 @@
+/* style.css */
+
+body {
+    background-image: url('img/bg.jpg');
+    background-repeat: repeat-x;
+    background-color: #fff;
+}
+
+#visual-portal-wrapper {
+    width:1080px;
+    margin:0 auto;
+}
+
+#content {
+    padding-top:20px;
+}
+
+/* colorscheme */
+
+
+#portal-globalnav, #portal-globalnav li a, #portal-globalnav .selected a:hover {
+    background: #444;
+    color: #fff;
+}
+
+#portal-globalnav .selected a, #portal-globalnav a:hover {
+    background: #333;
+    color: #fff;
+}
+
+
+#portal-footer, #portal-footer a, #portal-footer a:hover {
+    background: #444;
+    color: #fff;
+}
+
+.unslider-slide-content {
+    background:rgba(0,0,0,0.5);
+    color:#fff;
+    position:relative;
+    top:20%;
+}
+
+.unslider-slide-content a {
+    color: #fff;
+}
