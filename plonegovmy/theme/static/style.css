@@ -15,6 +15,10 @@ body {
     padding-top:20px;
 }
 
+#portlets-in-header {
+    margin-bottom:20px;
+}
+
 /* colorscheme */
 
 
@@ -33,6 +37,16 @@ body {
     background: #444;
     color: #fff;
 }
+
+#portal-footer {
+    width: 100%;
+}
+
+#portal-footer-wrapper, #portal-footer-wrapper a, #portal-footer-wrapper a:hover {
+    background: #444;
+    color: #fff;
+}
+
 
 .unslider-slide-content {
     background:rgba(0,0,0,0.5);
