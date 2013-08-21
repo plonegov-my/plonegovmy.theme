@@ -43,6 +43,10 @@ body {
     color: #fff;
 }
 
+dl.portlet dt, dl.portlet dt a, dl.portlet dt a:hover {
+    background: #444;
+    color: #fff;
+}
 
 .unslider-slide-content {
     background:rgba(0,0,0,0.5);
@@ -54,3 +58,5 @@ body {
 .unslider-slide-content a {
     color: #fff;
 }
+
+
